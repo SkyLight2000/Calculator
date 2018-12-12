@@ -59,7 +59,6 @@
             this.buttonCos = new System.Windows.Forms.Button();
             this.buttonSin = new System.Windows.Forms.Button();
             this.buttonTenAmp = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.Load = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,6 +66,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.DeleteHistory = new System.Windows.Forms.PictureBox();
             this.buttonDel = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteHistory)).BeginInit();
             this.SuspendLayout();
@@ -419,17 +419,6 @@
             this.buttonTenAmp.UseVisualStyleBackColor = false;
             this.buttonTenAmp.Click += new System.EventHandler(this.buttonTenAmp_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Monotype Corsiva", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(387, 27);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(295, 375);
-            this.textBox1.TabIndex = 31;
-            this.textBox1.Text = "Журнала еще нет";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -453,7 +442,7 @@
             // Load
             // 
             this.Load.Name = "Load";
-            this.Load.Size = new System.Drawing.Size(152, 22);
+            this.Load.Size = new System.Drawing.Size(137, 22);
             this.Load.Text = "Загрузить...";
             this.Load.ToolTipText = "Считать уравнение с файла\r\n";
             this.Load.Click += new System.EventHandler(this.Load_Click);
@@ -472,7 +461,7 @@
             // DeleteHistory
             // 
             this.DeleteHistory.BackgroundImage = global::Calculator.Properties.Resources.trash;
-            this.DeleteHistory.Location = new System.Drawing.Point(639, 358);
+            this.DeleteHistory.Location = new System.Drawing.Point(642, 361);
             this.DeleteHistory.Name = "DeleteHistory";
             this.DeleteHistory.Size = new System.Drawing.Size(40, 41);
             this.DeleteHistory.TabIndex = 33;
@@ -492,6 +481,22 @@
             this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.listBox1.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.listBox1.ItemHeight = 36;
+            this.listBox1.Items.AddRange(new object[] {
+            "Журнала еще нет"});
+            this.listBox1.Location = new System.Drawing.Point(385, 27);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.listBox1.Size = new System.Drawing.Size(297, 328);
+            this.listBox1.TabIndex = 34;
+            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,7 +504,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(694, 413);
             this.Controls.Add(this.DeleteHistory);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.buttonLn);
             this.Controls.Add(this.buttonTan);
             this.Controls.Add(this.buttonCos);
@@ -578,13 +583,13 @@
         private System.Windows.Forms.Button buttonCos;
         private System.Windows.Forms.Button buttonSin;
         private System.Windows.Forms.Button buttonTenAmp;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MenuFile;
         private System.Windows.Forms.ToolStripMenuItem Load;
         private System.Windows.Forms.ToolStripMenuItem MenuAbout;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox DeleteHistory;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
